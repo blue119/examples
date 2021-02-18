@@ -27,20 +27,6 @@ jobs:
     file: concourse-examples/pipelines/separate-task-config.yml
   - set_pipeline: serial-job
     file: concourse-examples/pipelines/serial-job.yml
-  - set_pipeline: pipeline-vars
-    file: concourse-examples/pipelines/pipeline-vars.yml
-    vars:
-      first: initial
-      number: "9000"
-      hello: HAL
-  - set_pipeline: task-passing-artifact
-    file: concourse-examples/pipelines/task-passing-artifact.yml
-  - set_pipeline: time-triggered
-    file: concourse-examples/pipelines/time-triggered.yml
-  - set_pipeline: git-triggered
-    file: concourse-examples/pipelines/git-triggered.yml
-  - set_pipeline: manual-trigger
-    file: concourse-examples/pipelines/manually-triggered.yml
   - set_pipeline: hooks
     file: concourse-examples/pipelines/job-and-task-hooks.yml
   - set_pipeline: golang-lib
